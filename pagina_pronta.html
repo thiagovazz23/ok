@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Curso Brownie Lucrativo | O Segredo do Brownie Perfeito</title>
+  <meta name="description" content="O Maior Curso de Brownies e Empreendedorismo do Brasil com receitas exclusivas, casquinha craquelada perfeita, suporte individual no WhatsApp e materiais completos para faturar alto." />
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS CDN for zero-dependency standalone usage -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Montserrat', 'sans-serif'],
+            sora: ['Sora', 'sans-serif'],
+          },
+          colors: {
+            coral: {
+              DEFAULT: '#FE7A80',
+              light: '#FFA3A4',
+              dark: '#E84A5F',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: #FAFAFA;
+      color: #282828;
+    }
+    .font-sora {
+      font-family: 'Sora', sans-serif;
+    }
+    .bg-theme-coral {
+      background: linear-gradient(132deg, #FE7A80, #FFA3A4);
+    }
+    .text-theme-coral {
+      background: linear-gradient(132deg, #FE7A80, #FFA3A4);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .btn-theme-action {
+      background: linear-gradient(132deg, #FE7A80, #FFA3A4);
+      color: #FFFFFF;
+      font-family: 'Sora', sans-serif;
+      font-weight: 800;
+      border-radius: 9999px;
+      box-shadow: 0 4px 15px rgba(254, 122, 128, 0.35);
+      transition: all 0.3s ease;
+      display: inline-block;
+      text-align: center;
+    }
+    .btn-theme-action:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 22px rgba(254, 122, 128, 0.5);
+    }
+    .strikethrough-x {
+      position: relative;
+      display: inline-block;
+    }
+    .strikethrough-x::after {
+      content: '';
+      position: absolute;
+      left: -5%;
+      top: 50%;
+      width: 110%;
+      height: 2px;
+      background-color: #FF0000;
+      transform: rotate(-8deg);
+    }
+  </style>
+</head>
+<body class="bg-[#FAFAFA] text-[#282828] antialiased selection:bg-[#FE7A80] selection:text-white flex flex-col min-h-screen">
+
+  <!-- 1. Top Banner -->
+  <aside class="bg-theme-coral text-white py-3 px-4 text-center shadow-sm">
+    <div class="max-w-5xl mx-auto space-y-0.5">
+      <h4 class="text-xs sm:text-sm md:text-base font-extrabold uppercase tracking-wide font-sora">
+        SUPER PROMO RELÂMPAGO COM ACESSO VITALÍCIO
+      </h4>
+      <p class="text-[11px] sm:text-xs font-semibold text-white/95">
+        Garanta o curso completo com todas as atualizações e bônus inclusos por apenas R$ 19,90!
+      </p>
+    </div>
+  </aside>
+
+  <!-- 2. Hero Section -->
+  <section class="pt-8 pb-14 bg-[#FAFAFA] text-center px-4 sm:px-6">
+    <div class="max-w-4xl mx-auto space-y-6">
+      
+      <!-- Clean Brand Badge -->
+      <div class="flex justify-center pt-2">
+        <div class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#FFF0F1] border-2 border-[#FFA3A4] text-[#E84A5F] font-black text-xs sm:text-sm tracking-widest uppercase font-sora shadow-sm">
+          <span class="text-base sm:text-lg">🍫</span>
+          <span>MÉTODO BROWNIE LUCRATIVO</span>
+        </div>
+      </div>
+
+      <!-- Tagline Highlight -->
+      <div class="inline-block bg-[#111] text-white text-xs sm:text-sm font-bold uppercase tracking-wider px-5 py-1.5 rounded-full shadow-sm font-sora">
+        100% Atualizado 2026
+      </div>
+
+      <!-- Main Headline -->
+      <div class="space-y-2">
+        <h1 class="text-2xl sm:text-4xl md:text-5xl font-black text-[#0F0F0F] tracking-tight leading-tight font-sora">
+          Renda extra ou negócio próprio é com a gente: <br />
+          <span class="text-theme-coral">OS BROWNIES MAIS VIRAIS DO MUNDO!</span>
+        </h1>
+
+        <p class="text-sm sm:text-lg text-[#444] font-medium max-w-3xl mx-auto pt-2 leading-relaxed">
+          Mais de <strong>10.000 alunas e alunos</strong> já transformaram suas cozinhas em fábricas de brownies lucrativos, vendendo todos os dias com receitas fáceis, casquinha craquelada perfeita e lucro acima de 300%.
+        </p>
+      </div>
+
+      <!-- Trust Badges -->
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-3 max-w-2xl mx-auto">
+        <div class="flex items-center justify-center gap-2.5 p-3 rounded-xl bg-white border border-[#EBEBEB] shadow-sm">
+          <img src="./images/pagamento-seguro.png" alt="Compra 100% Segura" class="w-8 h-8 object-contain shrink-0" />
+          <span class="text-xs sm:text-sm font-bold text-[#333] font-sora">Compra 100% Segura</span>
+        </div>
+        <div class="flex items-center justify-center gap-2.5 p-3 rounded-xl bg-white border border-[#EBEBEB] shadow-sm">
+          <img src="./images/controle-de-qualidade.png" alt="Garantia Incondicional de 30 Dias" class="w-8 h-8 object-contain shrink-0" />
+          <span class="text-xs sm:text-sm font-bold text-[#333] font-sora">Garantia de 30 Dias</span>
+        </div>
+        <div class="flex items-center justify-center gap-2.5 p-3 rounded-xl bg-white border border-[#EBEBEB] shadow-sm">
+          <img src="./images/efficiency.png" alt="Acesso Imediato e Vitalício" class="w-8 h-8 object-contain shrink-0" />
+          <span class="text-xs sm:text-sm font-bold text-[#333] font-sora">Acesso Imediato</span>
+        </div>
+      </div>
+
+      <!-- Primary CTA Button -->
+      <div class="pt-2">
+        <a
+          href="https://ggcheckout.app/checkout/v2/PMgNlP06eKOzB3a6Dklj"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn-theme-action px-8 sm:px-12 py-4 sm:py-5 text-sm sm:text-lg uppercase tracking-wide cursor-pointer w-full sm:w-auto inline-block text-center"
+        >
+          Quero garantir a MAIOR PROMO da história!
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 3. Video & Gallery Carousel -->
+  <section class="py-12 bg-white px-4 sm:px-6 border-y border-[#ECECEC]">
+    <div class="max-w-4xl mx-auto text-center space-y-8">
+      
+      <div class="space-y-2">
+        <h2 class="text-xl sm:text-3xl font-extrabold text-[#0F0F0F] font-sora">
+          Receitas fáceis, deliciosas e <span class="text-theme-coral">MUITO lucrativas</span>: custos a partir de R$1,20 por unidade!
+        </h2>
+        <p class="text-sm sm:text-base text-neutral-600 font-medium">
+          Assista ao vídeo abaixo para saber todos os detalhes!
+        </p>
+      </div>
+
+      <!-- YouTube Embed -->
+      <div class="relative rounded-2xl overflow-hidden shadow-xl border-4 border-[#FFA3A4]/30 max-w-3xl mx-auto bg-black aspect-video">
+        <iframe
+          src="https://www.youtube-nocookie.com/embed/T3ajK-_pXiw?autoplay=0&controls=1&rel=0&modestbranding=1"
+          title="Apresentação Brownie Gourmet Lucrativo"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+          class="w-full h-full border-0"
+        ></iframe>
+      </div>
+
+      <!-- Brownies Photo Gallery -->
+      <div class="space-y-4 pt-4">
+        <h3 class="text-lg sm:text-2xl font-bold text-[#111] font-sora">
+          Veja o que você será capaz de produzir logo nos primeiros dias:
+        </h3>
+
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-3 sm:gap-4 text-left">
+          <div class="group rounded-2xl overflow-hidden shadow-md border border-[#EAEAEA] bg-white transition hover:-translate-y-1">
+            <div class="aspect-square overflow-hidden bg-neutral-100">
+              <img src="./images/red_velvet.jpg" alt="Brownie Red Velvet" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" />
+            </div>
+            <div class="p-3 bg-white">
+              <span class="text-xs sm:text-sm font-bold text-[#222] font-sora block truncate">Brownie Red Velvet</span>
+            </div>
+          </div>
+
+          <div class="group rounded-2xl overflow-hidden shadow-md border border-[#EAEAEA] bg-white transition hover:-translate-y-1">
+            <div class="aspect-square overflow-hidden bg-neutral-100">
+              <img src="./images/saudavel.jpg" alt="Brownie Saudável e Funcional" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" />
+            </div>
+            <div class="p-3 bg-white">
+              <span class="text-xs sm:text-sm font-bold text-[#222] font-sora block truncate">Brownie Saudável</span>
+            </div>
+          </div>
+
+          <div class="group rounded-2xl overflow-hidden shadow-md border border-[#EAEAEA] bg-white transition hover:-translate-y-1">
+            <div class="aspect-square overflow-hidden bg-neutral-100">
+              <img src="./images/img_2011.jpg" alt="Casquinha Craquelada Crocante" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" />
+            </div>
+            <div class="p-3 bg-white">
+              <span class="text-xs sm:text-sm font-bold text-[#222] font-sora block truncate">Casquinha Craquelada</span>
+            </div>
+          </div>
+
+          <div class="group rounded-2xl overflow-hidden shadow-md border border-[#EAEAEA] bg-white transition hover:-translate-y-1">
+            <div class="aspect-square overflow-hidden bg-neutral-100">
+              <img src="./images/img_2012.jpg" alt="Massa Fudgy Fatiada" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" />
+            </div>
+            <div class="p-3 bg-white">
+              <span class="text-xs sm:text-sm font-bold text-[#222] font-sora block truncate">Massa Fudgy Úmida</span>
+            </div>
+          </div>
+
+          <div class="group rounded-2xl overflow-hidden shadow-md border border-[#EAEAEA] bg-white transition hover:-translate-y-1">
+            <div class="aspect-square overflow-hidden bg-neutral-100">
+              <img src="./images/brownie_9.jpg" alt="Trufado Cremoso" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" />
+            </div>
+            <div class="p-3 bg-white">
+              <span class="text-xs sm:text-sm font-bold text-[#222] font-sora block truncate">Trufado Cremoso</span>
+            </div>
+          </div>
+
+          <div class="group rounded-2xl overflow-hidden shadow-md border border-[#EAEAEA] bg-white transition hover:-translate-y-1">
+            <div class="aspect-square overflow-hidden bg-neutral-100">
+              <img src="./images/brownie_8.jpg" alt="Combo para Cafeterias" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" />
+            </div>
+            <div class="p-3 bg-white">
+              <span class="text-xs sm:text-sm font-bold text-[#222] font-sora block truncate">Combo para Cafeterias</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Action call -->
+      <div class="pt-4 space-y-4 max-w-2xl mx-auto">
+        <h4 class="text-base sm:text-xl font-extrabold text-[#111] font-sora">
+          Chegou a sua hora de acertar a fornada perfeita e lucrar alto!
+        </h4>
+        <a
+          href="https://ggcheckout.app/checkout/v2/PMgNlP06eKOzB3a6Dklj"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn-theme-action px-8 sm:px-12 py-4 text-xs sm:text-base uppercase tracking-wide cursor-pointer w-full sm:w-auto inline-block text-center"
+        >
+          Quero garantir a MAIOR PROMO da história!
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 4. Trust Bar -->
+  <section class="py-8 bg-[#FFF8F8] border-b border-[#F7E0E0] px-4">
+    <div class="max-w-4xl mx-auto flex flex-wrap items-center justify-around gap-6 text-center">
+      <div class="flex items-center gap-3">
+        <img src="./images/pagamento-seguro.png" alt="Compra Segura" class="w-9 h-9 object-contain" />
+        <div class="text-left">
+          <div class="text-xs font-bold text-neutral-800 font-sora">Compra Segura</div>
+          <div class="text-[11px] text-neutral-500">Privacidade 100% protegida</div>
+        </div>
+      </div>
+
+      <div class="flex items-center gap-3">
+        <img src="./images/controle-de-qualidade.png" alt="Garantia Incondicional" class="w-9 h-9 object-contain" />
+        <div class="text-left">
+          <div class="text-xs font-bold text-neutral-800 font-sora">Garantia 30 Dias</div>
+          <div class="text-[11px] text-neutral-500">Risco zero para você</div>
+        </div>
+      </div>
+
+      <div class="flex items-center gap-3">
+        <img src="./images/efficiency.png" alt="Acesso Imediato" class="w-9 h-9 object-contain" />
+        <div class="text-left">
+          <div class="text-xs font-bold text-neutral-800 font-sora">Acesso Imediato</div>
+          <div class="text-[11px] text-neutral-500">Liberação no mesmo instante</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Benefits Section -->
+  <section class="py-14 bg-[#FAFAFA] px-4 sm:px-6">
+    <div class="max-w-5xl mx-auto space-y-10">
+      
+      <div class="text-center space-y-3 max-w-2xl mx-auto">
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-[#111] font-sora">
+          Brownie: o melhor produto para vender o ano inteiro!
+        </h2>
+        <p class="text-xs sm:text-sm text-neutral-600">
+          Por que confeitarias e empreendedores individuais faturam tão alto com essa sobremesa:
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div class="p-5 rounded-2xl bg-white border border-[#EAEAEA] shadow-sm space-y-2">
+          <div class="w-9 h-9 rounded-xl bg-[#FFF0F1] flex items-center justify-center text-[#E84A5F] font-bold text-lg">💰</div>
+          <h3 class="font-bold text-sm sm:text-base text-[#111] font-sora">Altíssima Margem de Lucro</h3>
+          <p class="text-xs sm:text-sm text-neutral-600 leading-relaxed">
+            Custo médio de R$ 1,20 a R$ 1,40 por unidade com preço de venda entre R$ 6,00 e R$ 12,00. Margem líquida superior a 300%!
+          </p>
+        </div>
+
+        <div class="p-5 rounded-2xl bg-white border border-[#EAEAEA] shadow-sm space-y-2">
+          <div class="w-9 h-9 rounded-xl bg-[#FFF0F1] flex items-center justify-center text-[#E84A5F] font-bold text-lg">⏳</div>
+          <h3 class="font-bold text-sm sm:text-base text-[#111] font-sora">Validade Estendida Sem Químicos</h3>
+          <p class="text-xs sm:text-sm text-neutral-600 leading-relaxed">
+            15 dias em temperatura ambiente e até 90 dias congelado, sem perder maciez nem a casquinha craquelada.
+          </p>
+        </div>
+
+        <div class="p-5 rounded-2xl bg-white border border-[#EAEAEA] shadow-sm space-y-2">
+          <div class="w-9 h-9 rounded-xl bg-[#FFF0F1] flex items-center justify-center text-[#E84A5F] font-bold text-lg">☕</div>
+          <h3 class="font-bold text-sm sm:text-base text-[#111] font-sora">Revenda Fácil em Cafeterias e Mercados</h3>
+          <p class="text-xs sm:text-sm text-neutral-600 leading-relaxed">
+            O produto perfeito para colocar em padarias, cafeterias, hamburguerias e restaurantes através de consignação ou venda direta.
+          </p>
+        </div>
+
+        <div class="p-5 rounded-2xl bg-white border border-[#EAEAEA] shadow-sm space-y-2">
+          <div class="w-9 h-9 rounded-xl bg-[#FFF0F1] flex items-center justify-center text-[#E84A5F] font-bold text-lg">👩‍🍳</div>
+          <h3 class="font-bold text-sm sm:text-base text-[#111] font-sora">Fácil de Escalar com Forno Caseiro</h3>
+          <p class="text-xs sm:text-sm text-neutral-600 leading-relaxed">
+            Você não precisa de equipamentos industriais. Comece na cozinha da sua casa com os utensílios que já possui!
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 6. Offer Box (PRICING CARD - R$ 19,90 À VISTA) -->
+  <section class="py-14 bg-white px-4 sm:px-6 border-y border-[#ECECEC]">
+    <div class="max-w-2xl mx-auto">
+      
+      <div class="bg-[#FFFDFC] border-2 border-[#FFA3A4] rounded-3xl p-6 sm:p-10 shadow-xl space-y-6 text-center">
+        
+        <div class="space-y-1">
+          <h3 class="text-lg sm:text-2xl font-black text-[#111] uppercase tracking-wide font-sora">
+            Garanta agora sua vaga com desconto imperdível:
+          </h3>
+          <p class="text-xs sm:text-sm text-[#555] font-medium">
+            Acesso vitalício a todo o conteúdo, receitas oficiais, módulos bônus e suporte!
+          </p>
+        </div>
+
+        <!-- Clean Mockup Image -->
+        <div class="max-w-md mx-auto pt-2">
+          <img
+            src="./images/course_mockup_clean.jpg"
+            alt="Mockup Curso Completo Brownie Lucrativo"
+            class="w-full h-auto object-contain rounded-2xl shadow-md border border-[#FFA3A4]/30"
+          />
+        </div>
+
+        <!-- What is included checklist -->
+        <div class="text-left space-y-2.5 max-w-lg mx-auto py-2">
+          <div class="flex items-start gap-2.5 text-xs sm:text-sm text-[#222] font-semibold">
+            <span class="text-[#FE7A80] font-black text-sm shrink-0">✔</span>
+            <span>ACESSO VITALÍCIO A TODAS AS AULAS E ATUALIZAÇÕES</span>
+          </div>
+          <div class="flex items-start gap-2.5 text-xs sm:text-sm text-[#222] font-semibold">
+            <span class="text-[#FE7A80] font-black text-sm shrink-0">✔</span>
+            <span>CURSO COMPLETO DE BROWNIES COM TODAS AS RECEITAS</span>
+          </div>
+          <div class="flex items-start gap-2.5 text-xs sm:text-sm text-[#222] font-semibold">
+            <span class="text-[#FE7A80] font-black text-sm shrink-0">✔</span>
+            <span>CURSO INTENSIVÃO DECOLANDO PONTOS DE VENDA (BÔNUS!)</span>
+          </div>
+          <div class="flex items-start gap-2.5 text-xs sm:text-sm text-[#222] font-semibold">
+            <span class="text-[#FE7A80] font-black text-sm shrink-0">✔</span>
+            <span>NOVO: RECEITA EXCLUSIVA DE BROWNIE SAUDÁVEL - SEM GLÚTEN</span>
+          </div>
+          <div class="flex items-start gap-2.5 text-xs sm:text-sm text-[#222] font-semibold">
+            <span class="text-[#FE7A80] font-black text-sm shrink-0">✔</span>
+            <span>A ESTRATÉGIA COMPROVADA PARA FATURAR ATÉ R$5.000 POR MÊS!</span>
+          </div>
+          <div class="flex items-start gap-2.5 text-xs sm:text-sm text-[#222] font-semibold">
+            <span class="text-[#FE7A80] font-black text-sm shrink-0">✔</span>
+            <span>ASSISTÊNCIA INDIVIDUAL NO WHATSAPP</span>
+          </div>
+          <div class="flex items-start gap-2.5 text-xs sm:text-sm text-[#222] font-semibold">
+            <span class="text-[#FE7A80] font-black text-sm shrink-0">✔</span>
+            <span>TODO O CONTEÚDO LIBERADO IMEDIATAMENTE APÓS A COMPRA</span>
+          </div>
+        </div>
+
+        <!-- Pricing Highlight: R$ 19,90 à vista sem parcelamento -->
+        <div class="space-y-2 pt-2">
+          <div class="text-sm sm:text-base text-neutral-500 font-semibold font-sora">
+            <span class="strikethrough-x">de R$ 97,00 por apenas</span>
+          </div>
+
+          <div class="text-4xl sm:text-6xl font-black text-[#FE7A80] font-sora">
+            R$ 19,90
+          </div>
+
+          <div class="text-xs sm:text-sm font-bold text-emerald-700 bg-emerald-50 border border-emerald-200 py-1.5 px-4 rounded-full inline-block font-sora">
+            ✓ Pagamento único à vista · Sem parcelas ou mensalidades
+          </div>
+        </div>
+
+        <!-- Button -->
+        <div class="pt-2">
+          <a
+            href="https://ggcheckout.app/checkout/v2/PMgNlP06eKOzB3a6Dklj"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn-theme-action px-8 sm:px-14 py-4 sm:py-5 text-sm sm:text-lg uppercase tracking-wide cursor-pointer w-full sm:w-auto inline-block text-center"
+          >
+            Quero garantir minha inscrição!
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 7. Accordion Modules -->
+  <section class="py-14 bg-[#FAFAFA] px-4 sm:px-6">
+    <div class="max-w-4xl mx-auto space-y-8">
+      
+      <div class="text-center space-y-3">
+        <h2 class="text-2xl sm:text-4xl font-extrabold text-[#111] font-sora">
+          O que você irá aprender?
+        </h2>
+        <p class="text-xs sm:text-sm text-neutral-600 max-w-2xl mx-auto">
+          Grade completa de módulos passo a passo, do ponto exato da massa ao faturamento de mais de 5 mil reais por mês:
+        </p>
+      </div>
+
+      <!-- Module List with Pure Vanilla JS toggle -->
+      <div class="space-y-3 max-w-3xl mx-auto" id="modules-container">
+        
+        <!-- Module 1 -->
+        <div class="border border-[#E0E0E0] rounded-2xl bg-white overflow-hidden shadow-sm">
+          <button onclick="toggleAccordion('mod-1')" class="w-full text-left p-4 sm:p-5 flex items-center justify-between font-bold text-xs sm:text-sm text-[#111] font-sora hover:bg-[#FFF9F9] transition">
+            <span>Módulo 1: Os 7 Segredos do Brownie Perfeito</span>
+            <span id="mod-1-icon" class="text-base text-[#FE7A80]">▼</span>
+          </button>
+          <div id="mod-1" class="hidden p-4 sm:p-5 border-t border-[#F0F0F0] bg-[#FAFAFA] text-xs sm:text-sm text-[#444] space-y-2">
+            <p>• Ponto de fita da massa e emulsionamento perfeito</p>
+            <p>• Como regular forno elétrico e forno a gás sem errar o tempo</p>
+            <p>• A temperatura exata para não ressecar e manter a textura fudgy</p>
+          </div>
+        </div>
+
+        <!-- Module 2 -->
+        <div class="border border-[#E0E0E0] rounded-2xl bg-white overflow-hidden shadow-sm">
+          <button onclick="toggleAccordion('mod-2')" class="w-full text-left p-4 sm:p-5 flex items-center justify-between font-bold text-xs sm:text-sm text-[#111] font-sora hover:bg-[#FFF9F9] transition">
+            <span>Módulo 2: O Segredo da Casquinha Craquelada Crocante</span>
+            <span id="mod-2-icon" class="text-base text-[#FE7A80]">▼</span>
+          </button>
+          <div id="mod-2" class="hidden p-4 sm:p-5 border-t border-[#F0F0F0] bg-[#FAFAFA] text-xs sm:text-sm text-[#444] space-y-2">
+            <p>• A reação química entre açúcar e ovos que gera o brilho</p>
+            <p>• Como fazer a casquinha fina e brilhante sem precisar bater demais</p>
+            <p>• Dicas práticas para qualquer tipo de açúcar (refinado vs cristal)</p>
+          </div>
+        </div>
+
+        <!-- Module 3 -->
+        <div class="border border-[#E0E0E0] rounded-2xl bg-white overflow-hidden shadow-sm">
+          <button onclick="toggleAccordion('mod-3')" class="w-full text-left p-4 sm:p-5 flex items-center justify-between font-bold text-xs sm:text-sm text-[#111] font-sora hover:bg-[#FFF9F9] transition">
+            <span>Módulo 3: Brownie Tradicional Fudgy</span>
+            <span id="mod-3-icon" class="text-base text-[#FE7A80]">▼</span>
+          </button>
+          <div id="mod-3" class="hidden p-4 sm:p-5 border-t border-[#F0F0F0] bg-[#FAFAFA] text-xs sm:text-sm text-[#444] space-y-2">
+            <p>• Receita oficial padronizada para formas 20x20 e 30x20</p>
+            <p>• Custo por pedaço e rendimento exato por fornada</p>
+            <p>• Ponto de corte cirúrgico com faca quente</p>
+          </div>
+        </div>
+
+        <!-- Module 4 -->
+        <div class="border border-[#E0E0E0] rounded-2xl bg-white overflow-hidden shadow-sm">
+          <button onclick="toggleAccordion('mod-4')" class="w-full text-left p-4 sm:p-5 flex items-center justify-between font-bold text-xs sm:text-sm text-[#111] font-sora hover:bg-[#FFF9F9] transition">
+            <span>Módulo 4: Brownie Red Velvet com Cheesecake</span>
+            <span id="mod-4-icon" class="text-base text-[#FE7A80]">▼</span>
+          </button>
+          <div id="mod-4" class="hidden p-4 sm:p-5 border-t border-[#F0F0F0] bg-[#FAFAFA] text-xs sm:text-sm text-[#444] space-y-2">
+            <p>• Cor vibrante sem sabor residual de corante</p>
+            <p>• Swirl cremoso de cream cheese resistente ao forneamento</p>
+            <p>• O campeão de vendas em datas comemorativas</p>
+          </div>
+        </div>
+
+        <!-- Module 5 -->
+        <div class="border border-[#E0E0E0] rounded-2xl bg-white overflow-hidden shadow-sm">
+          <button onclick="toggleAccordion('mod-5')" class="w-full text-left p-4 sm:p-5 flex items-center justify-between font-bold text-xs sm:text-sm text-[#111] font-sora hover:bg-[#FFF9F9] transition">
+            <span>Módulo 5: Brownie Saudável Fit & Sem Glúten</span>
+            <span id="mod-5-icon" class="text-base text-[#FE7A80]">▼</span>
+          </button>
+          <div id="mod-5" class="hidden p-4 sm:p-5 border-t border-[#F0F0F0] bg-[#FAFAFA] text-xs sm:text-sm text-[#444] space-y-2">
+            <p>• Farinhas funcionais que mantêm umidade e textura elástica</p>
+            <p>• Baixo índice glicêmico e sem lactose opcional</p>
+            <p>• Como vender para o público de academias e crossfit</p>
+          </div>
+        </div>
+
+        <!-- Module 6 -->
+        <div class="border border-[#E0E0E0] rounded-2xl bg-white overflow-hidden shadow-sm">
+          <button onclick="toggleAccordion('mod-6')" class="w-full text-left p-4 sm:p-5 flex items-center justify-between font-bold text-xs sm:text-sm text-[#111] font-sora hover:bg-[#FFF9F9] transition">
+            <span>Módulo 6: Brookie (Brownie + Cookie Americano)</span>
+            <span id="mod-6-icon" class="text-base text-[#FE7A80]">▼</span>
+          </button>
+          <div id="mod-6" class="hidden p-4 sm:p-5 border-t border-[#F0F0F0] bg-[#FAFAFA] text-xs sm:text-sm text-[#444] space-y-2">
+            <p>• Como assar as duas massas juntas no mesmo tempo</p>
+            <p>• Gotas de chocolate que não derretem no forno</p>
+            <p>• A sobremesa sensação no Instagram e TikTok</p>
+          </div>
+        </div>
+
+        <!-- Module 7 -->
+        <div class="border border-[#E0E0E0] rounded-2xl bg-white overflow-hidden shadow-sm">
+          <button onclick="toggleAccordion('mod-7')" class="w-full text-left p-4 sm:p-5 flex items-center justify-between font-bold text-xs sm:text-sm text-[#111] font-sora hover:bg-[#FFF9F9] transition">
+            <span>Módulo 7: Pizza de Brownie & Marmitinhas Gourmet</span>
+            <span id="mod-7-icon" class="text-base text-[#FE7A80]">▼</span>
+          </button>
+          <div id="mod-7" class="hidden p-4 sm:p-5 border-t border-[#F0F0F0] bg-[#FAFAFA] text-xs sm:text-sm text-[#444] space-y-2">
+            <p>• Montagem de fatias recheadas estilo pizza</p>
+            <p>• Combinações de brigadeiros gourmet para cobertura</p>
+            <p>• Marmitinhas para delivery no iFood</p>
+          </div>
+        </div>
+
+        <!-- Module 8 -->
+        <div class="border border-[#E0E0E0] rounded-2xl bg-white overflow-hidden shadow-sm">
+          <button onclick="toggleAccordion('mod-8')" class="w-full text-left p-4 sm:p-5 flex items-center justify-between font-bold text-xs sm:text-sm text-[#111] font-sora hover:bg-[#FFF9F9] transition">
+            <span>Módulo 8: Embalagens, Conservação e Congelamento</span>
+            <span id="mod-8-icon" class="text-base text-[#FE7A80]">▼</span>
+          </button>
+          <div id="mod-8" class="hidden p-4 sm:p-5 border-t border-[#F0F0F0] bg-[#FAFAFA] text-xs sm:text-sm text-[#444] space-y-2">
+            <p>• 15 dias de validade em temperatura ambiente com lacre adequado</p>
+            <p>• Congelamento por 90 dias sem condensação</p>
+            <p>• Como descongelar e devolver o aspecto de recém-saído do forno</p>
+          </div>
+        </div>
+
+        <!-- Module 9 -->
+        <div class="border border-[#E0E0E0] rounded-2xl bg-white overflow-hidden shadow-sm">
+          <button onclick="toggleAccordion('mod-9')" class="w-full text-left p-4 sm:p-5 flex items-center justify-between font-bold text-xs sm:text-sm text-[#111] font-sora hover:bg-[#FFF9F9] transition">
+            <span>Módulo 9: Planilha Automática de Precificação</span>
+            <span id="mod-9-icon" class="text-base text-[#FE7A80]">▼</span>
+          </button>
+          <div id="mod-9" class="hidden p-4 sm:p-5 border-t border-[#F0F0F0] bg-[#FAFAFA] text-xs sm:text-sm text-[#444] space-y-2">
+            <p>• Cálculo automático de custo de insumos por grama</p>
+            <p>• Inclusão de gás, energia, embalagem e mão de obra</p>
+            <p>• Margem de lucro garantida para atacado e varejo</p>
+          </div>
+        </div>
+
+        <!-- Module 10 -->
+        <div class="border border-[#E0E0E0] rounded-2xl bg-white overflow-hidden shadow-sm">
+          <button onclick="toggleAccordion('mod-10')" class="w-full text-left p-4 sm:p-5 flex items-center justify-between font-bold text-xs sm:text-sm text-[#111] font-sora hover:bg-[#FFF9F9] transition">
+            <span>Módulo 10: Intensivão Pontos de Venda e Revenda</span>
+            <span id="mod-10-icon" class="text-base text-[#FE7A80]">▼</span>
+          </button>
+          <div id="mod-10" class="hidden p-4 sm:p-5 border-t border-[#F0F0F0] bg-[#FAFAFA] text-xs sm:text-sm text-[#444] space-y-2">
+            <p>• Script exato para fechar parcerias com cafeterias e restaurantes</p>
+            <p>• Como colocar display nos caixas de estabelecimentos</p>
+            <p>• Como criar rotas fixas de entrega semanal</p>
+          </div>
+        </div>
+
+        <!-- Module 11 -->
+        <div class="border border-[#E0E0E0] rounded-2xl bg-white overflow-hidden shadow-sm">
+          <button onclick="toggleAccordion('mod-11')" class="w-full text-left p-4 sm:p-5 flex items-center justify-between font-bold text-xs sm:text-sm text-[#111] font-sora hover:bg-[#FFF9F9] transition">
+            <span>Módulo 11: Fotos com Celular que Vendem Sozinhas</span>
+            <span id="mod-11-icon" class="text-base text-[#FE7A80]">▼</span>
+          </button>
+          <div id="mod-11" class="hidden p-4 sm:p-5 border-t border-[#F0F0F0] bg-[#FAFAFA] text-xs sm:text-sm text-[#444] space-y-2">
+            <p>• Ângulo e iluminação natural sem comprar equipamentos caros</p>
+            <p>• O 'corte em câmera lenta' que viraliza nos stories e reels</p>
+            <p>• Edição rápida no celular para destacar a cor e o brilho da casquinha</p>
+          </div>
+        </div>
+
+        <!-- Module 12 -->
+        <div class="border border-[#E0E0E0] rounded-2xl bg-white overflow-hidden shadow-sm">
+          <button onclick="toggleAccordion('mod-12')" class="w-full text-left p-4 sm:p-5 flex items-center justify-between font-bold text-xs sm:text-sm text-[#111] font-sora hover:bg-[#FFF9F9] transition">
+            <span>Módulo 12: A Estratégia Completa para Faturar R$5.000 por Mês!</span>
+            <span id="mod-12-icon" class="text-base text-[#FE7A80]">▼</span>
+          </button>
+          <div id="mod-12" class="hidden p-4 sm:p-5 border-t border-[#F0F0F0] bg-[#FAFAFA] text-xs sm:text-sm text-[#444] space-y-2">
+            <p>• Como calcular metas diárias de venda (quantos brownies por dia)</p>
+            <p>• Funil simples de WhatsApp para clientes recorrentes</p>
+            <p>• Gestão de fluxo de caixa para reinvestir e crescer</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 8. Testimonials Section -->
+  <section class="py-14 bg-white px-4 sm:px-6 border-y border-[#ECECEC]">
+    <div class="max-w-4xl mx-auto space-y-8 text-center">
+      <h2 class="text-2xl sm:text-3xl font-extrabold text-[#111] font-sora">
+        O que nossas alunas dizem:
+      </h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div class="rounded-2xl overflow-hidden shadow-md border border-[#EAEAEA] bg-white p-2">
+          <img src="./images/depoimento_48.jpg" alt="Depoimento Aluna" class="w-full h-auto object-contain rounded-xl" />
+        </div>
+        <div class="rounded-2xl overflow-hidden shadow-md border border-[#EAEAEA] bg-white p-2">
+          <img src="./images/depoimento_49.jpg" alt="Depoimento Aluna" class="w-full h-auto object-contain rounded-xl" />
+        </div>
+        <div class="rounded-2xl overflow-hidden shadow-md border border-[#EAEAEA] bg-white p-2">
+          <img src="./images/depoimento_whats.png" alt="Print WhatsApp Suporte Oficial" class="w-full h-auto object-contain rounded-xl" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. Guarantee Section -->
+  <section class="py-14 bg-[#FAFAFA] px-4 sm:px-6">
+    <div class="max-w-3xl mx-auto bg-white border border-[#EAEAEA] rounded-3xl p-6 sm:p-10 shadow-sm flex flex-col sm:flex-row items-center gap-6 text-center sm:text-left">
+      <div class="shrink-0">
+        <img src="./images/selo_garantia.png" alt="Garantia Incondicional 30 Dias" class="w-36 sm:w-44 h-auto object-contain" />
+      </div>
+      <div class="space-y-2">
+        <h3 class="text-xl sm:text-2xl font-extrabold text-[#111] font-sora">
+          Vá em frente. O risco é todo meu!
+        </h3>
+        <p class="text-xs sm:text-sm text-[#444] leading-relaxed">
+          Você tem 30 dias de garantia para consumir todo o conteúdo. Se achar que o método não é para você, basta solicitar seu reembolso direto com nosso suporte. Você receberá 100% do seu dinheiro de volta sem burocracias.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10. FAQ Accordions -->
+  <section class="py-14 bg-white px-4 sm:px-6 border-t border-[#ECECEC]">
+    <div class="max-w-3xl mx-auto space-y-8">
+      <h2 class="text-2xl sm:text-3xl font-extrabold text-[#111] text-center font-sora">
+        Perguntas Frequentes (F.A.Q.)
+      </h2>
+
+      <div class="space-y-3">
+        <div class="border border-[#E0E0E0] rounded-2xl bg-white overflow-hidden shadow-sm">
+          <button onclick="toggleAccordion('faq-1')" class="w-full text-left p-4 sm:p-5 flex items-center justify-between font-bold text-xs sm:text-sm text-[#111] font-sora hover:bg-[#FFF9F9]">
+            <span>Preciso ter experiência prévia na cozinha?</span>
+            <span id="faq-1-icon" class="text-base text-[#FE7A80]">▼</span>
+          </button>
+          <div id="faq-1" class="hidden p-4 sm:p-5 border-t border-[#F0F0F0] bg-[#FAFAFA] text-xs sm:text-sm text-[#444]">
+            Não! O curso é 100% detalhado do absoluto zero, ensinando desde a temperatura dos ovos até o ponto de tirar da forma.
+          </div>
+        </div>
+
+        <div class="border border-[#E0E0E0] rounded-2xl bg-white overflow-hidden shadow-sm">
+          <button onclick="toggleAccordion('faq-2')" class="w-full text-left p-4 sm:p-5 flex items-center justify-between font-bold text-xs sm:text-sm text-[#111] font-sora hover:bg-[#FFF9F9]">
+            <span>Por quanto tempo tenho acesso ao curso?</span>
+            <span id="faq-2-icon" class="text-base text-[#FE7A80]">▼</span>
+          </button>
+          <div id="faq-2" class="hidden p-4 sm:p-5 border-t border-[#F0F0F0] bg-[#FAFAFA] text-xs sm:text-sm text-[#444]">
+            O seu acesso é vitalício! Você pode assistir quando e quantas vezes quiser, no seu computador, tablet ou celular.
+          </div>
+        </div>
+
+        <div class="border border-[#E0E0E0] rounded-2xl bg-white overflow-hidden shadow-sm">
+          <button onclick="toggleAccordion('faq-3')" class="w-full text-left p-4 sm:p-5 flex items-center justify-between font-bold text-xs sm:text-sm text-[#111] font-sora hover:bg-[#FFF9F9]">
+            <span>Como recebo o acesso após o pagamento?</span>
+            <span id="faq-3-icon" class="text-base text-[#FE7A80]">▼</span>
+          </button>
+          <div id="faq-3" class="hidden p-4 sm:p-5 border-t border-[#F0F0F0] bg-[#FAFAFA] text-xs sm:text-sm text-[#444]">
+            Assim que a compra de R$ 19,90 for aprovada no checkout, você recebe imediatamente no seu e-mail todos os dados de acesso à plataforma com todas as aulas e bônus liberados.
+          </div>
+        </div>
+
+        <div class="border border-[#E0E0E0] rounded-2xl bg-white overflow-hidden shadow-sm">
+          <button onclick="toggleAccordion('faq-4')" class="w-full text-left p-4 sm:p-5 flex items-center justify-between font-bold text-xs sm:text-sm text-[#111] font-sora hover:bg-[#FFF9F9]">
+            <span>Como funciona a garantia de 30 dias?</span>
+            <span id="faq-4-icon" class="text-base text-[#FE7A80]">▼</span>
+          </button>
+          <div id="faq-4" class="hidden p-4 sm:p-5 border-t border-[#F0F0F0] bg-[#FAFAFA] text-xs sm:text-sm text-[#444]">
+            Você tem 30 dias para testar todas as receitas. Se você não gostar do conteúdo, basta mandar uma mensagem que devolvemos 100% do seu dinheiro.
+          </div>
+        </div>
+      </div>
+
+      <!-- Final CTA -->
+      <div class="text-center pt-6">
+        <a
+          href="https://ggcheckout.app/checkout/v2/PMgNlP06eKOzB3a6Dklj"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn-theme-action px-8 sm:px-12 py-4 sm:py-5 text-sm sm:text-lg uppercase tracking-wide cursor-pointer w-full sm:w-auto inline-block text-center"
+        >
+          Quero garantir a MAIOR PROMO da história!
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 11. Footer -->
+  <footer class="py-10 bg-white border-t border-[#EAEAEA] text-center text-xs text-neutral-500 px-4 mt-auto">
+    <div class="max-w-4xl mx-auto space-y-3">
+      <p>
+        Copyright © 2023-2026 Todos os direitos reservados. Brownie Gourmet Lucrativo. CNPJ: 23.261.807.0001/83
+      </p>
+      <div class="flex items-center justify-center gap-3 text-[11px] text-neutral-400">
+        <span class="hover:text-neutral-600 cursor-pointer">Termos de uso</span>
+        <span>•</span>
+        <span class="hover:text-neutral-600 cursor-pointer">Política de Privacidade</span>
+        <span>•</span>
+        <span class="hover:text-neutral-600 cursor-pointer">Cookies</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Vanilla Accordion Toggle Script -->
+  <script>
+    function toggleAccordion(id) {
+      const el = document.getElementById(id);
+      const icon = document.getElementById(id + '-icon');
+      if (!el) return;
+      
+      const isHidden = el.classList.contains('hidden');
+      if (isHidden) {
+        el.classList.remove('hidden');
+        if (icon) icon.textContent = '▲';
+      } else {
+        el.classList.add('hidden');
+        if (icon) icon.textContent = '▼';
+      }
+    }
+  </script>
+
+</body>
+</html>

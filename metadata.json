@@ -1,0 +1,8 @@
+{
+  "name": "Le Bron Brownie",
+  "description": "O Maior Curso de Brownies e Empreendedorismo do Brasil com receitas exclusivas, casquinha craquelada perfeita, suporte individual no WhatsApp e materiais completos para faturar alto.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
